@@ -24,7 +24,7 @@ html, body {
 }
 
 .container.nav-open {
-  margin-top: 8em;
+  margin-top: 9em;
   width: 90%;
   transition: (all 0.3s ease);
 }
@@ -79,7 +79,8 @@ html, body {
 
 .nav {
   position: fixed;
-  top: 0; left: 5%;
+  top: 2em; 
+  left: 5%;
   color: $white;
   z-index: 1;
     ul {
@@ -102,6 +103,7 @@ html, body {
       &:nth-child(3){ transition: (top $speed ease 0.25s); }
       &:nth-child(4){ transition: (top $speed ease 0.3s); }
       &:nth-child(5){ transition: (top $speed ease 0.35s); }
+
       i {
         font-size: 1.5em;
         background: $pink;
@@ -115,6 +117,10 @@ html, body {
         font-family: $open-sans;
         text-transform: uppercase;
         padding-top: .2em;
+      }
+      &:hover {
+        opacity: .8;
+        transform: scale(1.2,1.2);
       }
     }
 
