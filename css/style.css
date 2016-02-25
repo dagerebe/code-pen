@@ -24,6 +24,12 @@ html, body {
   position: relative;
 }
 
+.container.nav-open {
+  margin-top: 8em;
+  width: 90%;
+  transition: all 0.3s ease;
+}
+
 .menu-icon {
   position: relative;
   display: block;
@@ -107,36 +113,37 @@ html, body {
 }
 
 .nav li:nth-child(1) {
-  -webkit-animation: transition(top 0.3s ease 0.15s);
-          animation: transition(top 0.3s ease 0.15s);
+  transition: top 0.3s ease 0.15s;
 }
 
 .nav li:nth-child(2) {
-  -webkit-animation: transition(top 0.3s ease 0.2s);
-          animation: transition(top 0.3s ease 0.2s);
+  transition: top 0.3s ease 0.2s;
 }
 
 .nav li:nth-child(3) {
-  -webkit-animation: transition(top 0.3s ease 0.25s);
-          animation: transition(top 0.3s ease 0.25s);
+  transition: top 0.3s ease 0.25s;
 }
 
 .nav li:nth-child(4) {
-  -webkit-animation: transition(top 0.3s ease 0.3s);
-          animation: transition(top 0.3s ease 0.3s);
+  transition: top 0.3s ease 0.3s;
 }
 
 .nav li:nth-child(5) {
-  -webkit-animation: transition(top 0.3s ease 0.35s);
-          animation: transition(top 0.3s ease 0.35s);
+  transition: top 0.3s ease 0.35s;
 }
 
 .nav li i {
   font-size: 1.5em;
-  background: #10d7af;
+  background: #ff69b4;
   padding: 0.75em;
   border-radius: 50%;
-  color: white;
   display: inline-block;
   overflow: hidden;
+}
+
+.nav li h4 {
+  color: #aaaaaa;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  padding-top: .2em;
 }
