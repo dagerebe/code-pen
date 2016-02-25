@@ -13,3 +13,20 @@ html {
 	font-weight: 800;
 	color: $white;
 }
+
+.hero {
+	position: relative;
+	height: 60vh;
+	z-index: -2;
+	background: url(../img/brickwall.jpg) center top/cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(225,225,225,0.3);
+}
